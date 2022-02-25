@@ -38,7 +38,7 @@
   </div>
 </div>
 <script
-  src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"
+  src="https://www.paypal.com/sdk/js?client-id=AfFsAdMpy63YMYg3QxL8x7Rh_ohFJ9019KDr3wNvnc5vNC6tpaq0EEgSbVYnXt-dSMiOAQq-ROQkI_Uf&currency=USD"
   data-sdk-integration-source="button-factory">
 </script>
     <script>
@@ -73,7 +73,6 @@
         return actions.order.create({
           purchase_units: [{
             "amount": {
-              "currency_code": "USD",
               "value": '{{basket.get_total_price}}'
             }
           }]
